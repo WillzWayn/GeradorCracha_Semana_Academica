@@ -69,7 +69,7 @@ with open("LISTA.txt") as f:
         font = ImageFont.truetype("arial.ttf", 25)
         draw = ImageDraw.Draw(cracha) ####
         draw.text(((xDoPapel-tamanhoQR[0])/2 + tamanhoQR[0] - tamNome+40, yDoPapel/2+posicaoAlturaNome), nome ,(0,0,0), font=font) ## NOME
-        draw.text(((xDoPapel-tamanhoQR[0])/2 + tamanhoQR[0] - tamUniv+40, yDoPapel/2+posicaoAlturaUniv), univ, (255,0,0), font=font)
+        draw.text(((xDoPapel-tamanhoQR[0])/2 + tamanhoQR[0] - tamUniv+40, yDoPapel/2+posicaoAlturaUniv), univ, (0,0,0), font=font)
         cracha.save('Crachas Gerados/'+nome+'.png')
         
         
